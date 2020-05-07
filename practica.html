@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Curso Básico HTML5</title>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="js/file.js"></script>
+
+    </head>
+ 
+    <body>
+       
+        <header>
+            <h1>Hola Mundo</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/uno.html">Menú item 1</a></li>
+                    <li><a href="/dos.html">Menú item 2</a></li>
+                    <li><a href="/tres.html">Menú item 3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="wrapper">
+
+            <div class="container">
+                <section>
+                    <h2>Don Quijote de la Mancha</h2>
+                    <p> En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lentejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas con sus pantuflos de lo mismo, los días de entre semana se honraba con su vellori de lo más fino. </p>
+                    <p>  Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años, era de complexión recia, seco de carnes, enjuto de rostro; gran madrugador y amigo de la caza.</p>
+                </section>
+
+                <aside>
+                    <img src="img/publicity.PNG" alt="publicity image">
+                </aside>
+            </div>
+
+            <form>
+                <h2>Formulario</h2>
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <div class="form-group">
+                        <div class="formItem">
+                            <label for="nombre">Nombre</label> <input type="text" id="nombre" name="nombre"/>
+                        </div>
+                        <div class="formItem">
+                            <label for="apellidos">Apellidos</label> <input type="text" id="apellidos" name="apellidos">
+                        </div>
+                        <div class="formItem">
+                            <label for="telefono">Teléfono</label> <input type="tel" id="telefono" name="telefono">
+                        </div>
+                    </div>
+
+                    <div class="form-group2">
+                        <div class="formItem">
+                            <label for="dni" id="dni">
+                                <input type="radio" id="dni" name="documento" value="dni"> DNI
+                            </label>
+                            <!-- radiobutton implícito -->
+                            <label for="nie">
+                                <input name="documento" id="nie" type="radio" value="nie" /> NIE
+                            </label>
+                        </div>
+                        <div class="formItem">
+                            <label for="documento"> Nº Documento</label> <input type="text" id="telefono" name="telefono">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros datos</legend>
+
+                    <div class="form-group">
+                        <div class="formItem hermanos">
+                            <label>Nº de hermanos/as</label> <input type="text"> 
+                        </div>
+
+                        <div class="formItem deportes">                     
+                            <label>Deportes favoritos</label>   
+                            <ol>
+                                <li>Fútbol <input type="checkbox"></li>
+                                <li>Baloncesto <input type="checkbox"> </li>
+                                <li>Rugby <input type="checkbox"> </li>
+                                <li>Padel <input type="checkbox"></li>
+                                <li>Pelota vasca <input type="checkbox"> </li>
+                            </ol> 
+                        </div>  
+                    </div>
+                </fieldset>
+                <input type="reset" value="Borrar formulario">
+                <input type="submit" value="Enviar">
+            </form>
+
+            <table>
+                <h1> Título de la tabla</h1>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>DNI/NIE</th>
+                    <th>Deportes</th>
+                </tr>
+                <tr>
+                    <td>Rocío</td>
+                    <td>Fernández</td>
+                    <td>973736363</td>
+                    <td>23456632S</td>
+                    <td>Baloncesto</td>
+                </tr>
+                <tr>
+                    <td>Eva</td>
+                    <td>Nuñez</td>
+                    <td>973222363</td>
+                    <td>23411632B</td>
+                    <td>Rugby, Fútbol</td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>

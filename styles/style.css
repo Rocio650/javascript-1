@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+   
+  :root{
+      --wrapper-width: 80%;
+    /*--------------------- COLORS ---------------------*/
+      --color-primary: #9aae04; /*VERDE*/
+      --border-color: #777;    /*GRIS OSCURO*/
+    /*--------------------- END COLORS ---------------------*/
+    /*--------------------- FONTS ---------------------*/
+      --font-primary: 'verdana';
+      --base_font_size: 1rem;
+      --base_titles_size: 2rem;
+      --big_titles_size: 3rem;
+    /*--------------------- END FONTS ---------------------*/
+    /*--------------------- SPACING ---------------------*/
+      --base_spacing-size: 1rem;  /*Margin y Padding*/
+    /*--------------------- END SPACING ---------------------*/
+   
+  }
+ 
+
+
+/*--------------------- GENERAL ---------------------*/
+
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: var(--base_titles_size);
+}  
+
+/*--------------------- END GENERAL ---------------------*/
+
+
+
+
+
+
+/*--------------------- BODY BASE -------------------*/
+
+body {
+    padding: 0;
+    margin: 0 auto;   
+    width: 100%;
+    font-family: var(--font-primary);
+    font-size: var(--base_font_size);
+}   
+
+/*--------------------- END BODY BASE -------------------*/
+
+
+
+
+/*--------------------- HEADER ---------------------*/
+header {
+    width: 100%;
+    background-color: lightgrey;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    margin-bottom: 10px;
+}
+
+header h1{
+    margin-left: 10%;
+    font-size: var(--big_titles_size); 
+}
+/*--------------------- END HEADER ---------------------*/
+
+
+
+  
+ 
+   
+/*--------------------- WRAPPER ---------------------*/
+#wrapper {
+    width: var(--wrapper-width);
+    margin: 0 auto;  
+}   
+
+/*--------------------- END WRAPPER ---------------------*/
+
+
+/*--------------------- CONTAINER -------------------*/
+.container {
+    height: 330px;    
+    padding-top: 20px;
+    border-top: 1px dashed var(--color-primary);
+    border-bottom: 1px dashed var(--color-primary); 
+}
+/*--------------------- END CONTAINER ---------------------*/
+
+
+
+
+/*--------------------- SECTION -------------------*/
+section {
+    float: left; 
+    width: 80%;
+}
+
+section h2 {
+    margin-top: 0px;
+}
+section p {
+    width: 92%;
+    padding: 15px;
+    background-color: lightgrey;
+    font-size: 15px;
+    margin-bottom: 1%;
+}
+/*--------------------- END SECTION -------------------*/
+
+
+
+/*--------------------- ASIDE -------------------*/
+aside {
+    background-color: lightgrey;
+    width: 20%;
+    height: 295px;
+    float: left;
+    text-align: center;
+}
+aside img {    
+    width: 90%;
+    margin-top: 10px;
+}
+/*--------------------- END ASIDE -------------------*/
+
+
+
+/*--------------------- MENU -------------------*/
+ul.menu {
+    margin-left: 10%;
+    margin-right: 125px;
+    max-width: max-content;
+    background-color: white;
+    list-style: none;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1.1px solid #7C7C7C;
+}
+
+ul.menu li {
+    display: table-cell;
+}
+
+ul.menu li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    border-right: 1px solid #7c7c7c;
+    padding: 15px;
+}
+
+ul.menu li:first-child a{
+    font-weight: 600;
+}
+
+ul.menu li a:hover {
+    color: white;
+    background-color: var(--color-primary);
+}    
+ 
+ul.menu li:last-child a{
+    border-right: 0px;
+}
+
+/*--------------------- END MENU -------------------*/
+   
+   
+  
+   
+   
+/*--------------------- FORM -------------------*/
+form {
+    width: 100%;
+    float: left;
+    margin-top: 2%;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed var(--color-primary);
+}
+form fieldset {
+    padding: 20px;
+    height: auto;
+}
+
+fieldset:first-of-type {
+    margin-bottom: 20px!important;
+}
+
+form legend {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+form .form-group, form .form-group2 {
+   margin-bottom: 20px;
+}
+form .form-group, form .form-group2  {
+    margin-bottom: 20px;
+ }
+
+.formItem {
+    display: inline-block;
+    margin-right: 1%;
+    width: 30%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label#dni {
+    margin-right: 4%;
+}
+
+.formItem input[type="text"], input[type="tel"] {
+    width: 100%;
+} 
+
+.form-group2 .formItem:first-child {
+    margin-right: 1%;
+    display: inline-flex;
+    position: relative;
+    top: -23px;
+}
+
+.formItem input{
+    border: 1px solid var(--color-primary);
+    padding: 5px;
+}
+
+
+input[type="reset"], input[type="submit"] {
+    width: 150px;
+    margin-top: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid #333333;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: #004d00;
+}
+
+.formItem.hermanos {
+    position: relative;
+    margin-right: 4%;
+    top: -68px;
+}
+
+.formItem.deportes {
+    position: relative;
+    top: 9px;
+}
+
+ol {
+    margin-top: 2px;
+}
+ 
+/*--------------------- END FORM -------------------*/
+   
+   
+
+
+
+
+
+/*--------------------- TABLE -------------------*/
+table {
+    border: 1.5px solid #333333;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th {
+    border: 1.5px solid #333333;
+    padding: 10px;
+    background-color: var(--color-primary);
+ }
+
+ th:last-of-type, td:last-of-type {
+    width: 25%;
+ }
+
+ td {
+    border: 1.5px solid #333333;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding: 15px;
+ }
+ /*--------------------- END TABLE -------------------*/
+
+
+
+
+
+
+
+
+
